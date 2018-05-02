@@ -13,9 +13,7 @@ read -p "任意键继续"
 curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
 source ~/.bash_profile
 vi /root/.bashrc
-# nvm
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
-:wq
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org 
 nvm install v9.8.0
 nvm alias default v9.8.0
 yum -y install gcc-c++
